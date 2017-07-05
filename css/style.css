@@ -50,7 +50,7 @@
 .name {
 	display: flex;
 	justify-content: flex-end;
-	padding: 8px;
+	padding: 0px;
 	margin: 0px;
 }
 
