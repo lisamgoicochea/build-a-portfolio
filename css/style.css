@@ -1,13 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300');
 
 * {
-	border: 1px solid red !important;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
-	margin: auto;
-	padding: 0px;
 	font-family: 'Lato', sans-serif;
 	max-width: 940px;
 	color: #2d3c49;
@@ -82,38 +79,44 @@
 	}
 }
 
+.container-fluid {
+	display: flex;
+	justify-content: space-between;
+}
+
 .logo {
-	padding: 4px;
+	padding: 0px;
 	max-height: 80px;
 	max-width: 80px;
 }
 
 .name {
+	display: flex;
+	justify-content: flex-end;
 	padding: 0px;
 	margin: 0px;
 }
 
+
 .title {
 	display: flex;
-	justify-content: flex-end;
-}
-
-hr {
-    border-top: 4px solid #7d97ad;
-}  /* not sure why hr is not showing up with set css properties */
-
-
-.featured {
-	position: relative;
-	margin: 4%;
-	color: #7d97ad;
+	justify-content: space-between;
 }
 
 .flex-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.featured {
 	position: relative;
+	color: #7d97ad;
+}
+
+/*.flex-row {
 	display: flex;
 	text-align: center;
-}
+}*/
 
 .col-12 {
 	display: flex;
@@ -128,4 +131,18 @@ hr {
 	max-width: 100%;
 	display: flex;
 	flex-direction: flex-start;
+}
+
+.center-text {
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
+
+.project-image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
