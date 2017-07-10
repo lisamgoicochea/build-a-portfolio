@@ -1,14 +1,57 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300');
 
 * {
+	border: 1px solid red !important;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
 	box-sizing: border-box;
 	margin: auto;
 	padding: 0px;
 	font-family: 'Lato', sans-serif;
-	max-width: 960px;
+	max-width: 940px;
 	color: #2d3c49;
-	position: relative;
 
+}
+
+.row {
+	width: 100%;
+}
+.col-1 {
+	width: 8.33%;
+}
+.col-2 {
+	width: 16.66%;
+}
+.col-3 {
+	width: 25%;
+}
+.col-4 {
+	width: 33.33%;
+}
+.col-5 {
+	width: 41.66%;
+}
+.col-6 {
+	width: 50%;
+}
+.col-7 {
+	width: 58.33%;
+}
+.col-8 {
+	width: 66.66%;
+}
+.col-9 {
+	width: 75%;
+}
+.col-10 {
+	width: 83.33%;
+}
+.col-11 {
+	width: 91.66%;
+}
+.col-12 {
+	width: 100%;
 }
 
 @media (max-width: 1200px) {
@@ -40,16 +83,12 @@
 }
 
 .logo {
-	display: inline;
-	position: fixed;
 	padding: 4px;
 	max-height: 80px;
 	max-width: 80px;
 }
 
 .name {
-	display: flex;
-	justify-content: flex-end;
 	padding: 0px;
 	margin: 0px;
 }
@@ -68,23 +107,25 @@ hr {
 	position: relative;
 	margin: 4%;
 	color: #7d97ad;
-
 }
 
 .flex-row {
 	position: relative;
 	display: flex;
 	text-align: center;
-
 }
 
-.col-3-1 {
-	width: 33.33%;
-	margin: 1%;
-	padding: 10px;
+.col-12 {
+	display: flex;
+	justify-content: flex-end;
 }
-
-img {
+.col-6 {
+	display: flex;
+	justify-content: flex-end;
+}
+ 
+ img {
 	max-width: 100%;
-	margin: auto;
+	display: flex;
+	flex-direction: flex-start;
 }
